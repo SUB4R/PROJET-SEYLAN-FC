@@ -88,74 +88,52 @@ main {
     }
 
 
-    footer {
-        background-color: black;
+    .footer-container {
+        background-color: #000000;
         color: white;
         padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+        text-align: center;
     }
     
-    .footer-container {
-        width: 100%;
-        max-width: 1200px; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .partnership-logos, .footer-links, .clickable-logos {
+        margin-bottom: 20px;
     }
     
-    .partnership-logos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px; 
-        margin-bottom: 20px; 
+    .partner-logo, .social-logo {
+        width: 80px; /* Taille des logos des partenaires */
+        margin: 0 10px;
+        vertical-align: middle;
     }
     
-    .footer-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 10px; 
-        margin-bottom: 20px; 
-    }
-    
-    .clickable-logos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px; 
-    }
-    
-    .logo-item, .social-icon {
-        display: inline-flex;
-        width: 40px;
-        height: 40px;
-        justify-content: center;
-        align-items: center;
-        background-size: contain;
-        background-position: center;
+    .social-logo {
+        width: 40px; /* Taille des logos des réseaux sociaux */
     }
     
     .footer-links a {
         color: white;
+        margin: 0 15px;
         text-decoration: none;
-        padding: 5px 10px;
-        background-color: #333;
-        border-radius: 5px;
     }
     
-    @media (max-width: 768px) {
-        .partnership-logos, .clickable-logos {
-            flex-direction: column;
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+    
+    hr {
+        border-color: #555;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    /* Responsive design adjustments */
+    @media (max-width: 600px) {
+        .partner-logo, .social-logo {
+            width: 60px; /* Smaller logos on smaller screens */
         }
     
-        .footer-links {
-            flex-direction: column;
-            gap: 10px;
+        .footer-links a {
+            margin: 0 10px;
+            font-size: 14px; /* Smaller font size for links on smaller screens */
         }
     }
 
