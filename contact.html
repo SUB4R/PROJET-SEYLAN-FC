@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Page d'Accueil</title>
+    <title>Actualités</title>
     <link rel="stylesheet" href="assets/css/contact.css">
+    <script src="/assets/js/contact.js" defer></script>
 </head>
 <body>
 <header>
@@ -66,7 +67,7 @@
 </header>
 <main>
     <section class="container mt-4">
-    <h1>Actus & Video</h1>
+    <h1>Jour-J</h1>
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -82,7 +83,7 @@
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="assets/img/equipe de foot.jpeg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Some representative placeholder content for the second slide.</p>
@@ -108,34 +109,162 @@
     </section>
     <hr>
     <section>
-
+        <div class="video-title">
+            <h1>Entraînement du Jour</h1>
+        </div>
+        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="ratio ratio-16x9">
+                        <video class="d-block w-100" autoplay loop muted>
+                            <source src="assets/video/entrainement.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Titre de la Vidéo 1</h1>
+                        <p>Description ou commentaire sur la vidéo 1.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 et suivants -->
+                <div class="carousel-item">
+                    <div class="ratio ratio-16x9">
+                        <video class="d-block w-100" autoplay loop muted>
+                            <source src="assets/video/entrainement 3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Titre de la Vidéo 2</h1>
+                        <p>Description ou commentaire sur la vidéo 2.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="ratio ratio-16x9">
+                        <video class="d-block w-100" autoplay loop muted>
+                            <source src="assets/video/entrainement 5.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Titre de la Vidéo 2</h1>
+                        <p>Description ou commentaire sur la vidéo 2.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="ratio ratio-16x9">
+                        <video class="d-block w-100" autoplay loop muted>
+                            <source src="assets/video/entrainement 6.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Titre de la Vidéo 2</h1>
+                        <p>Description ou commentaire sur la vidéo 2.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </section>
-</main>
-
-    <footer>
-        <div class="footer-container">
-            <div class="partnership-logos" >
-                <div class="arcticons--nike"></div>
-                <div class="logos--spotify-icon"></div>
-                <div class="simple-icons--hp"></div>
-                <div class="simple-icons--mcdonalds"></div>
-            </div>
-            <hr>
-            <div class="footer-links">
-                <a href="link1.html">Newsletters</a>
-                <a href="link2.html">Mentions Légales</a>
-                <a href="link3.html">Politique de Confidentialités</a>
-                <a href="link4.html">Politique des Cookies</a>
-            </div>
-            <div class="clickable-logos">
-                <a href="clic1.html"><div class="devicon--facebook"></div></a>
-                <a href="clic2.html"><div class="skill-icons--instagram"></div></a>
-                <a href="clic3.html"><div class="teenyicons--snapchat-solid"></div></a>
-                <a href="clic4.html"><div class=".bi--twitter-x"></div></a>
-                <a href="clic5.html"><div class="logos--tiktok-icon"></div></a>
+    <hr>
+    <section>
+        <div>
+<h1>Conférence de presse</h1>
+        </div>
+        <div class="container">
+            <h2>Galerie d'Images</h2>
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="/assets/img/psg ultra.jpg" alt="Image 1" class="img-fluid">
+                                <h3>Titre Image 1</h3>
+                                <p>Description Image 1</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/img/equipe de foot.jpeg" alt="Image 2" class="img-fluid">
+                                <h3>Titre Image 2</h3>
+                                <p>Description Image 2</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/img/psg ultra.jpg" alt="Image 3" class="img-fluid">
+                                <h3>Titre Image 3</h3>
+                                <p>Description Image 3</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/img/equipe de foot.jpeg" alt="Image 4" class="img-fluid">
+                                <h3>Titre Image 4</h3>
+                                <p>Description Image 4</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Répétez la structure ci-dessus pour d'autres groupes de 4 images comme une nouvelle slide -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="/assets/img/SEYLAN (1).png" alt="Image 5" class="img-fluid">
+                                <h3>Titre Image 5</h3>
+                                <p>Description Image 5</p>
+                            </div>
+                            <div class="col-md-3">
+                                <video class="d-block w-100" autoplay loop muted src="assets/video/dribble.mp4"></video>
+                                <h3>Titre Image 6</h3>
+                                <p>Description Image 6</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="image7.jpg" alt="Image 7" class="img-fluid">
+                                <h3>Titre Image 7</h3>
+                                <p>Description Image 7</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="image8.jpg" alt="Image 8" class="img-fluid">
+                                <h3>Titre Image 8</h3>
+                                <p>Description Image 8</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </footer>
+    </section>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="partners-icons">
+            <img src="/assets/img/icons8-nike-144.png" alt="Partenaire 1">
+            <img src="/assets/img/icons8-spotify-144.png" alt="Partenaire 2">
+            <img src="/assets/img/icons8-hp-144.png" alt="Partenaire 3">
+            <img src="/assets/img/icons8-mcdonald-144.png" alt="Partenaire 4">
+        </div>
+        <div class="footer-links">
+            <a href="#lien1">Lien 1</a>
+            <a href="#lien2">Lien 2</a>
+            <a href="#lien3">Lien 3</a>
+            <a href="#lien4">Lien 4</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com"><img src="/assets/img/icons8-facebook-48.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="/assets/img/icons8-x-50.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="/assets/img/icons8-instagram-48.png" alt="Instagram"></a>
+            <a href="https://tiktok.com"><img src="/assets/img/icons8-tic-tac-48.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+</footer>
+   
 
 
 </body>
