@@ -2,9 +2,9 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #fff; /* Choisissez une couleur de fond appropriée */
-    z-index: 1000; /* Assurez-vous qu'il reste au-dessus des autres éléments */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optionnel: ajoute une ombre pour un effet de profondeur */
+    background-color: #fff; 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
 
 html, body {
@@ -15,125 +15,131 @@ html, body {
 
 body {
     display: flex;
-    flex-direction: column; /* Organizes the content in a vertical direction */
+    flex-direction: column; 
 }
 
 
 .navbar {
-    background-color: #00000000; /* Fond sombre personnalisé */
-    box-shadow: 0 2px 5px rgba(22, 22, 197, 0.2); /* Ombre pour un effet de profondeur */
+    background-color: #00000000; 
+    box-shadow: 0 2px 5px rgba(22, 22, 197, 0.2); 
   }
   
   .navbar-brand img {
-    height: 80px; /* Taille adaptée pour les logos */
-    transition: transform 0.3s ease; /* Animation douce pour le logo */
+    height: 80px; 
+    transition: transform 0.3s ease; 
   }
   
   .navbar-brand img:hover {
-    transform: scale(1.1); /* Effet de zoom au survol sur le logo */
+    transform: scale(1.1); 
   }
   
   .navbar-brand, .navbar-nav .nav-link {
-    color: #f8f8f8; /* Couleur de texte foncée */
+    color: #f8f8f8; 
     text-shadow: 1px 1px 2px rgb(255, 34, 0); 
-    background: transparent;/* Ombre claire pour améliorer le contraste */
+    background: transparent;
   }
   
   
   
-  /* Stylisation du menu déroulant */
+ 
   .dropdown-menu {
-    background-color: #ff3c3f; /* Utilisez la même couleur de fond que dans le premier CSS */
-    background-image: linear-gradient(225deg, #ff3c3f 0%, #0048f7 99%);  /* Fond du menu déroulant */
-    border: none; /* Pas de bordure pour un look épuré */
-    box-shadow: 0 6px 8px rgba(255, 0, 0, 0.5); /* Ombre pour le menu déroulant */
+    background-color: #ff3c3f; 
+    background-image: linear-gradient(225deg, #ff3c3f 0%, #0048f7 99%);  
+    border: none; 
+    box-shadow: 0 6px 8px rgba(255, 0, 0, 0.5); 
   }
   
   .dropdown-item:hover, .dropdown-item:focus {
-    background-color: #ff3c3f; /* Utilisez la même couleur de fond que dans le premier CSS */
+    background-color: #ff3c3f; 
     background-image: linear-gradient(225deg, #ff3c3f 0%, #0048f7 99%);  
-    color: white; /* Texte blanc pour les items survolés */
-  }
+    color: white; }
   
   .logo, .small-logo {
     height: auto;
   }
   
   .logo {
-    max-height: 100px; /* Maximum height for main logo */
+    max-height: 100px; 
   }
   
   .small-logo {
-    max-height: 50px; /* Maximum height for small logo (shopping cart) */
+    max-height: 50px; 
   }
 
   main {
-    flex: 1; /* Allows main to expand and occupy any available space */
-    padding-top: 100px; /* You can adjust this value to accommodate your fixed header */
-    background-color: #ff3c3f; /* Utilisez la même couleur de fond que dans le premier CSS */
-    background-image: linear-gradient(225deg, #ff3c3f 0%, #0048f7 99%);  /* Fond du menu déroulant */
+    flex: 1;
+    padding-top: 100px;
+    background-color: #ff3c3f;
+    background-image: linear-gradient(225deg, #ff3c3f 0%, #0048f7 99%);
+    display: flex;
+    justify-content: flex-start; /* Alignement des éléments au début */
+    gap: 20px; /* Espacement entre les produits */
+    padding: 20px; /* Padding général autour des produits */
+    perspective: 1500px; /* Pour un effet de perspective potentiel */
+}
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.product {
+    width: calc(33% - 60px);
+    background-color: #ff3c3f;
+    background-image: linear-gradient(225deg, #ff3c3f 0%, #0048f7 99%);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    gap: 20px; /* Adds space between sections */
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+  
 }
 
-
-
-.sect1 {
-    display: flex;
-    flex-wrap: wrap; /* Allows multiple lines of articles */
-    justify-content: space-around; /* Distributes space around each article */
-    gap: 20px; /* Space between articles */
-    max-width: 300px; /* Max width of the section */
-    height: 10px;
-    margin: 200px; 
+.product:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
-.art1 {
-    flex: 1 1 300px; /* Flex grow, shrink and basis. Adjust basis as per requirement */
-    background-color: #f9f9f9; /* Light background for the articles */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+.product img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
 }
 
-.art1:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+.product img:hover {
+    transform: scale(1.1);
 }
 
-.f1 {
-    padding: 15px; /* Padding inside each figure */
-    text-align: center; /* Centering the text inside the figure */
+.product button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
-.f1 img {
-    width: 100%; /* Make the image expand to cover the width */
-    height: auto; /* Maintain aspect ratio */
-    border-top-left-radius: 10px; /* Rounded corners at the top of the image */
-    border-top-right-radius: 10px;
+.product button:hover {
+    background-color: #0056b3;
+    transform: translateY(-10px);
 }
 
-.f1 h2 {
-    color: #333; /* Dark color for the title */
-    font-size: 1.5em; /* Larger font size for headings */
+.add-to-cart{
+  height: 100px;
+  width: auto;
 }
 
-.f1 p {
-    color: #666; /* Lighter text color for the paragraph */
-    font-size: 1em; /* Standard font size for text */
-}
-
-.f1 i {
-    font-style: normal; /* Removes italic style from <i> tag */
-    color: #444; /* Color for the price */
-    font-weight: bold; /* Makes the price bold */
-}
-
-.a1 {
-    text-decoration: none; /* Removes underline from links */
-    color: inherit; /* Inherits color from parent elements */
+figcaption {
+    color: #fff;
 }
 
 footer {
@@ -167,7 +173,7 @@ footer {
     color: #ededed;
     text-decoration: none;
     margin: 5px 0;
-    color: #f8f8f8; /* Couleur de texte foncée */
+    color: #f8f8f8; 
     text-shadow: 1px 1px 2px rgb(255, 34, 0); 
     
     
