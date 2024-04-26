@@ -33,6 +33,11 @@ body {
     text-align: center; 
   }
 
+  main{ 
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  }
+
   .full-screen-image  {
     position: relative;
     width: 100%;
@@ -59,7 +64,8 @@ body {
 
 .btn-primary {
     padding: 10px 20px;
-    background-color: #007bff; /* Bootstrap primary blue */
+    background: rgb(171,80,169);
+background: radial-gradient(circle, rgba(171,80,169,1) 57%, rgba(63,94,251,1) 76%, rgba(252,70,107,1) 100%);
     color: white;
     text-decoration: none;
     border-radius: 20px;
@@ -69,7 +75,8 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
   
   footer {
