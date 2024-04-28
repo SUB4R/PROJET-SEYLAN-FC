@@ -1,8 +1,16 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var message = document.getElementById('message').value;
-    alert('Merci, ' + name + '! Votre message a été envoyé.');
-    this.reset(); // Optional: Clears the form after submission
+document.addEventListener('leo', function () {
+    function toggleMenu(event) {
+        const submenu = event.currentTarget.nextElementSibling;
+        if (submenu.style.display === 'block') {
+            submenu.style.display = 'none';
+        } else {
+            submenu.style.display = 'block';
+        }
+    }
+
+    // Attach click event listeners to menu items with submenus
+    const menuWithSubs = document.querySelectorAll('#boutique-menu, #club-menu, #contact-menu');
+    menuWithSubs.forEach(menu => {
+        menu.addEventListener('click', toggleMenu);
+    });
 });

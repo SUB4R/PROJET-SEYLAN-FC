@@ -1,205 +1,237 @@
-
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #fff; /* Choisissez une couleur de fond appropriée */
-    z-index: 1000; /* Assurez-vous qu'il reste au-dessus des autres éléments */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optionnel: ajoute une ombre pour un effet de profondeur */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff; /* Choisissez une couleur de fond appropriée */
+  z-index: 1000; /* Assurez-vous qu'il reste au-dessus des autres éléments */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optionnel: ajoute une ombre pour un effet de profondeur */
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+
 
 body {
-    display: flex;
-    flex-direction: column; /* Organizes the content in a vertical direction */
+background-color: #ff3c3f; /* Red background */
+background-image: linear-gradient(225deg, #ff3c3f 0%, #0048f7 99%); /* Gradient from red to blue */
 }
 
 main {
-    flex: 1; /* Allows main to expand and occupy any available space */
-    padding-top: 100px; /* You can adjust this value to accommodate your fixed header */
-    background-color: #ff3c3f; /* Utilisez la même couleur de fond que dans le premier CSS */
-    background-image: linear-gradient(225deg, #ff3c3f 0%, #0048f7 99%);  /* Fond du menu déroulant */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+padding-top: 100px; /* Adjust this value based on your header's height */
 }
-
-
-
-.contact-form-container {
-    background-color: #000cfb;
-background-image: linear-gradient(135deg, #000cfb 0%, #ff0000 100%);
-    padding: 50px;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    width: 500px;
-    
-}
-
-.contact-form-container h2 {
-    text-align: center;
-    color: white;
-    background-color: #ff0000;
-    background-image: linear-gradient(135deg, #ff0000 0%, #000cfb 100%);
-    
-border-radius: 8px;
-
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    color: #fff;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: #000cfb;
-    background-image: linear-gradient(135deg, #000cfb 0%, #ff0000 100%);
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
 
 /* Navigation */
 
 .navbar {
-    background-color: #00000000; /* Fond sombre personnalisé */
-    box-shadow: 0 2px 5px rgba(22, 22, 197, 0.2); /* Ombre pour un effet de profondeur */
-  }
-  
-  .navbar-brand img {
-    height: 80px; /* Taille adaptée pour les logos */
-    transition: transform 0.3s ease; /* Animation douce pour le logo */
-  }
-  
-  .navbar-brand img:hover {
-    transform: scale(1.1); /* Effet de zoom au survol sur le logo */
-  }
-  
-  .navbar-brand, .navbar-nav .nav-link {
-    color: #f8f8f8; /* Couleur de texte foncée */
-    text-shadow: 1px 1px 2px rgb(255, 34, 0); 
-    background: transparent;/* Ombre claire pour améliorer le contraste */
-  }
-  
-  
-  
-  /* Stylisation du menu déroulant */
-  .dropdown-menu {
-    background-color: #ff3c3f; /* Utilisez la même couleur de fond que dans le premier CSS */
-    background-image: linear-gradient(225deg, #ff3c3f 0%, #0048f7 99%);  /* Fond du menu déroulant */
-    border: none; /* Pas de bordure pour un look épuré */
-    box-shadow: 0 6px 8px rgba(255, 0, 0, 0.5); /* Ombre pour le menu déroulant */
-  }
-  
-  .dropdown-item:hover, .dropdown-item:focus {
-    background-color: #ff3c3f; /* Utilisez la même couleur de fond que dans le premier CSS */
-    background-image: linear-gradient(225deg, #ff3c3f 0%, #0048f7 99%);  
-    color: white; /* Texte blanc pour les items survolés */
-  }
-  
-  .logo, .small-logo {
-    height: auto;
-  }
-  
-  .logo {
-    max-height: 100px; /* Maximum height for main logo */
-  }
-  
-  .small-logo {
-    max-height: 50px; /* Maximum height for small logo (shopping cart) */
-  }
-  main{
-    background-color: #0048f7;
-  }
+background-color: #00000000; /* Fond sombre personnalisé */
+box-shadow: 0 2px 5px rgba(22, 22, 197, 0.2); /* Ombre pour un effet de profondeur */
+}
 
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    font-family: Arial, sans-serif;
-    
-    
-  }
-  
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  .partners-icons img,
-  .social-icons a img {
-    width: 50px;
-    height: 50px;
-    margin: 0 10px;
-  }
-  
-  .footer-links a  {
-    display: block;
-    color: #ededed;
-    text-decoration: none;
-    margin: 5px 0;
-    color: #f8f8f8; /* Couleur de texte foncée */
-    text-shadow: 1px 1px 2px rgb(255, 34, 0); 
-    
-    
-  }
-  
-  
-  .social-icons a img {
-    transition: transform 0.3s ease;
-  }
-  
-  .social-icons a img:hover {
-    transform: scale(1.1);
-  }
-  
-  @media (min-width: 768px) {
-    .footer-container {
-        flex-direction: row;
-    }
-  
-    .footer-links {
-        order: 2;
-    }
-  
-    .social-icons {
-        order: 3;
-    }
-  
-    .partners-icons {
-        order: 1;
-    }
-  }
+.navbar-brand img {
+height: 80px; /* Taille adaptée pour les logos */
+transition: transform 0.3s ease; /* Animation douce pour le logo */
+}
+
+.navbar-brand img:hover {
+transform: scale(1.1); /* Effet de zoom au survol sur le logo */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+color: #f8f8f8; /* Couleur de texte foncée */
+text-shadow: 1px 1px 2px rgb(255, 34, 0); 
+background: transparent;/* Ombre claire pour améliorer le contraste */
+}
+
+
+
+/* Stylisation du menu déroulant */
+.dropdown-menu {
+background-color: #ff3c3f; /* Utilisez la même couleur de fond que dans le premier CSS */
+background-image: linear-gradient(225deg, #ff3c3f 0%, #0048f7 99%);  /* Fond du menu déroulant */
+border: none; /* Pas de bordure pour un look épuré */
+box-shadow: 0 6px 8px rgba(255, 0, 0, 0.5); /* Ombre pour le menu déroulant */
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+background-color: #ff3c3f; /* Utilisez la même couleur de fond que dans le premier CSS */
+background-image: linear-gradient(225deg, #ff3c3f 0%, #0048f7 99%);  
+color: white; /* Texte blanc pour les items survolés */
+}
+
+.logo, .small-logo {
+height: auto;
+}
+
+.logo {
+max-height: 100px; /* Maximum height for main logo */
+}
+
+.small-logo {
+max-height: 50px; /* Maximum height for small logo (shopping cart) */
+}
+
+/* Style général du conteneur */
+.container {
+max-width: 1200px;
+margin: auto;
+padding: 15px;
+background-color: #ff3c3f; /* Utilisez la même couleur de fond que dans le premier CSS */
+background-image: linear-gradient(225deg, #ff3c3f 0%, #0048f7 99%);
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile pour la profondeur */
+border-radius: 8px; /* Bordures arrondies */
+}
+
+/* Titres principaux pour une meilleure hiérarchie visuelle */
+h1, h2 {
+background-color: #603cff; /* Utilisez la même couleur de fond que dans le premier CSS */
+background-image: linear-gradient(225deg, #ff3c3c 0%, #0010f7 99%);
+color: #fc9191;
+margin-top: 20px;
+margin-bottom: 10px;
+text-align: center; /* Centre les titres */
+border-radius: 6px;
+}
+
+/* Amélioration des carrousels */
+#videoCarousel .carousel-item .ratio {
+max-width: 1000px; /* ou toute autre largeur appropriée */
+margin: auto; /* Centre la vidéo si elle est plus petite que le conteneur parent */
+}
+
+
+
+.carousel {
+position: relative;
+margin-top: 20px;
+}
+
+.carousel-item {
+transition: transform 0.5s ease; /* Douce transition pour le changement de slide */
+}
+
+.carousel-item img {
+width: 100%;
+height: auto;
+border-radius: 4px; /* Bordures légèrement arrondies pour les images */
+}
+
+.carousel-caption {
+background: rgba(0, 0, 0, 0.5);
+padding: 10px;
+border-radius: 5px;
+transform: translate(-50%, -50%);
+bottom: 20px;
+left: 50%;
+}
+
+/* Styles spécifiques pour les vidéos */
+.video-title h1 {
+margin-bottom: 15px;
+}
+
+.ratio {
+background-color: black; /* Fond noir pour mieux voir les vidéos non chargées */
+}
+
+/* Galerie d'images dans les carrousels */
+.img-fluid {
+transition: transform 0.3s ease-in-out; /* Transition pour zoom au survol */
+}
+
+.img-fluid:hover {
+transform: scale(1.05); /* Légère augmentation de taille au survol */
+}
+
+/* Styles des boutons de contrôle pour améliorer la visibilité */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+background-color: #847e7e; /* Plus visible sur les images claires */
+border-radius: 20%; /* Forme circulaire */
+padding: 10px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+background-color: #cc0b0b; /* Assombrir au survol */
+}
+
+/* Responsive Design pour un meilleur affichage sur petits écrans */
+@media (max-width: 768px) {
+.container {
+    padding: 10px;
+}
+
+.col-md-3 {
+    flex: 0 0 50%; /* Prend deux colonnes sur mobile pour moins de compression */
+    max-width: 50%;
+}
+
+.carousel-caption {
+    font-size: 14px; /* Taille de texte réduite pour les petits écrans */
+}
+}
+
+/* Headings */
+
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px 0;
+font-family: Arial, sans-serif;
+
+
+}
+
+.footer-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+max-width: 1200px;
+margin: auto;
+padding: 20px;
+}
+
+.partners-icons img,
+.social-icons a img {
+width: 50px;
+height: 50px;
+margin: 0 10px;
+}
+
+.footer-links a  {
+display: block;
+color: #ededed;
+text-decoration: none;
+margin: 5px 0;
+color: #f8f8f8; /* Couleur de texte foncée */
+text-shadow: 1px 1px 2px rgb(255, 34, 0); 
+
+
+}
+
+
+.social-icons a img {
+transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+.footer-container {
+    flex-direction: row;
+}
+
+.footer-links {
+    order: 2;
+}
+
+.social-icons {
+    order: 3;
+}
+
+.partners-icons {
+    order: 1;
+}
+}
